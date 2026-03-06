@@ -103,7 +103,7 @@ def get_variable_attrs(var_name, base_attrs, jacobian_attrs, coordinate_attrs, d
         
         return ('kg kg-1 m s-1', long_name, None)
 
-    # Handle numbered versions of base fields (e.g., AuxScalar_0, etc.)
+    # Handle numbered versions of base fields (e.g. AuxScalar_0, etc.)
     base_name_match = re.match(r'^([A-Za-z_]+?)_?(\d+)$', var_name)
     if base_name_match:
         base_name = base_name_match.group(1)
